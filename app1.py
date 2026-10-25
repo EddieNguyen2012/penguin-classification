@@ -8,7 +8,6 @@ from sklearn.preprocessing import OneHotEncoder, OrdinalEncoder, StandardScaler
 from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
 from sklearn.neighbors import KNeighborsClassifier
-from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
 
 
 # -----------------------------
@@ -181,13 +180,3 @@ with tab:
         })
 
         st.dataframe(probability_df)
-
-        error_rates = 1- grid_search.cv_results_['mean_test_score']
-
-        fig = plt.figure(figsize=(10, 6))
-        plt.plot(range(1, 21), error_rates, marker='o', linestyle='--')
-        plt.title('Error Rate vs. K Value')
-        plt.xlabel('K Value')
-        plt.ylabel('Error Rate')
-
-        st.pyplot(fig)
