@@ -1,3 +1,5 @@
+Link to the Streamlit app: [https://penguin-classification-eddie-0220.streamlit.app/](https://penguin-classification-eddie-0220.streamlit.app/)
+
 # Penguin Species Classification
 
 This project uses a **K-nearest-neighbors (KNN)** classifier to predict a penguin's species from its physical measurements and other characteristics. It also includes a Streamlit application that allows users to enter a new penguin's information and receive a predicted species and class probabilities.
